@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func getFirstNum()(int) {
+	var a int
+	fmt.Print("ENTER FIRST NUMBER: ")
+	fmt.Scanln(&a)
+
+	return a
+}
+
 func main() {
 	fmt.Println("Welcome to CLI Calculator")
 
