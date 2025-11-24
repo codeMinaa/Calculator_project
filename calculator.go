@@ -2,6 +2,18 @@ package main
 
 import "fmt"
 
+func getfirstNumber()(int) {
+	var a int
+	fmt.Print("Enter First Number:.")
+	_,err=fmt.Scanln(&a)
+	if err==nil{
+		fmt.Println(a)
+	} else {
+		fmt.Println("Invalid Input!")
+	}
+	return a
+}
+
 func main() {
 	fmt.Println("Welcome to CLI Calculator")
 
