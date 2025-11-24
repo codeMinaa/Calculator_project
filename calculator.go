@@ -10,13 +10,15 @@ func getSecondNumber() int {
 		fmt.Print(b)
 	} else {
 		fmt.Println("Invalid Input!")
-		return b
 	}
-func getfirstNumber()(int) {
+	return b
+}
+
+func getFirstNumber() int {
 	var a int
 	fmt.Print("Enter First Number:.")
-	_,err=fmt.Scanln(&a)
-	if err==nil{
+	_, err = fmt.Scanln(&a)
+	if err == nil {
 		fmt.Println(a)
 	} else {
 		fmt.Println("Invalid Input!")
