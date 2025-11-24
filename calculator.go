@@ -10,9 +10,8 @@ func getSecondNumber() int {
 		fmt.Print(b)
 	} else {
 		fmt.Println("Invalid Input!")
-
+		return b
 	}
-	return b
 func getfirstNumber()(int) {
 	var a int
 	fmt.Print("Enter First Number:.")
