@@ -2,11 +2,15 @@ package main
 
 import "fmt"
 
-func getFirstNum()(int) {
+func getfirstNumber()(int) {
 	var a int
-	fmt.Print("ENTER FIRST NUMBER: ")
-	fmt.Scanln(&a)
-
+	fmt.Print("Enter First Number:.")
+	_,err=fmt.Scanln(&a)
+	if err==nil{
+		fmt.Println(a)
+	} else {
+		fmt.Println("Invalid Input!")
+	}
 	return a
 }
 
